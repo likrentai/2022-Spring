@@ -353,6 +353,7 @@
 
             <h3>Click to 'blue' the student 55 of class B (document.querySelector):</h3>
             <button type="button" onclick='document.querySelector("#demo55").style = "color:blue";'> Example 33b </button>
+            <button type="button" onclick='puppy()'> Example 33bi </button>
 
             <h3>How many students are there in class A? (document.getElementsByClassName):</h3>
             <button type="button" onclick='f21()'> Example 33c </button>
@@ -369,6 +370,13 @@
             <button type="button" onclick='f22a()'> Example 33f </button>
             
             <script>
+                function puppy() {
+                    document.querySelector(".cB").style.color = "orange";       //querySelector does not accept [0]
+                    //document.querySelectorAll(".cB")[0].style.color = "orange";     //querySelectorAll accepts [0]
+                    document.querySelectorAll(".cB")[1].style.color = "orange";
+                    document.querySelectorAll(".cB")[2].style.color = "orange";
+                }
+
                 function f21() {
                     var nodelist01 = document.getElementsByClassName('cA');
                     document.getElementById("demo58").innerHTML = nodelist01.length;
