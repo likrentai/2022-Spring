@@ -494,5 +494,35 @@
                 </script>
             <hr>
         </div>
+
+        <div>
+            <h2>TEST) HTML DOM addEventListener - mouseover & mouseout events</h2>
+            <h1 id="aaa">HELLO</h1>
+            <p id="bbb"></p>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            
+            <script>
+                aaa.addEventListener ("mouseover", test1);
+                aaa.addEventListener ("mouseout", test2);
+                function test1() {
+                    bbb.innerHTML = "hello again";
+                }
+                function test2() {
+                    bbb.innerHTML = "";
+                }
+            </script>
+        </div>
+        <hr>
     </body>
 </html>
